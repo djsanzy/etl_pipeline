@@ -23,8 +23,52 @@ Loading data
 Next, we'd like to load the transformed dataset into  a SQL Database. We will be using pandas
 and sqlite to do that.
 In the load function. it takes in 3 parameters (database_name, dataframe, table_name)
-The database_name and the table name can be any names that you want while the dataframe is the variable
-name that you used in the transform_2 function in the main dot py
+The database_name and the table name can be any names that you want while the dataframe is the variable name that you used in the transform_2 function in the main dot py.
+
+
+STEP BY STEP CODE ALONG
+#Extracting data is almost always the first step when building a data pipeline)
+1. Create a function called extract, with a single parameter of name (file_path).
+2. Read the data using pandas and assign a variable name to it
+3. Return the data
+
+#Transformation is an important step in ETL pipeline. This step takes care of cleaning and transforming your data
+1.Define a function with name transform that takes an argument.
+2. Format the columns to be lowercased
+3. Drop duplicates
+4. Rename columns
+5. Convert data types
+
+# Loading which is almost the last step in an ETL Pipeline
+1. Import sqlite3
+2. Create a function called load with the parameters (database name, dataframe, table name)
+3. Create your sqlite connection
+4. Write the dataframe to sql
+And if you want to read the dataframe, use pandas read sql function
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
