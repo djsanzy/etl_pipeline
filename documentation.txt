@@ -1,0 +1,31 @@
+Prerequisite: Knowledge of Python, SQL
+Software: Pycharm, Anaconda(Jupyter NoteBook)
+
+This is an end to end project done for the apps data that will be provided alongside the codes.
+This apps data is in a csv file.
+The main dot py is the main function where all the functions were called.
+In the extract function, there is a parameter that takes in your file path, reads it, gives you
+an information about your data and returns the data.
+
+The first transform function takes an argument. In this function, the data were transformed
+and cleaned. I dropped duplicated values. Some columns data types were changed. And the cleaned
+data was equally returned.
+
+The second transform takes 2 argument. This second transformation is only for the reviews columns
+in the data. The 1st parameter is the data itself and the 2nd parameter takes
+an input(integer) from the user also. The user has to input a review number greater
+than 158. And the columns is already sorted out. The user only has to specify the number of
+values they want using the head function
+"DO NOT INPUT A STRING DATA TYPE"
+
+
+Loading data
+Next, we'd like to load the transformed dataset into  a SQL Database. We will be using pandas
+and sqlite to do that.
+In the load function. it takes in 3 parameters (database_name, dataframe, table_name)
+The database_name and the table name can be any names that you want while the dataframe is the variable
+name that you used in the transform_2 function in the main dot py
+
+
+
+This code is strictly for Python Programming Language. It can't work in other language
